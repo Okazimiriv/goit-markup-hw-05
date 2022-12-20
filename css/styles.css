@@ -31,9 +31,9 @@ body {
   padding-right: 15px;
 }
 
-.site-nav .current {
+/* .site-nav .current {
   color: var(--accent-color);
-}
+} */
 
 /* ______heder______ */
 .heder {
@@ -103,10 +103,6 @@ body {
   padding-bottom: var(--gap24);
 }
 
-.site-nav .current {
-  color: var(--accent-color);
-}
-
 .site-adress a {
   color: #434455;
 }
@@ -120,6 +116,26 @@ body {
   display: flex;
   align-items: center;
   /* justify-content: flex-start; */
+}
+
+.site-nav .current {
+  color: var(--accent-color);
+  position: relative;
+}
+
+/* .effect {
+  position: relative;
+} */
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+  background: #404bbf;
+  border-radius: 2px;
 }
 
 /* ______ Hero_____ */
