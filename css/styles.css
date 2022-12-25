@@ -263,6 +263,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--accent-hover);
+  fill: var(--basik-light-color);
+}
+
 /* ____advantages_____ */
 
 .section {
@@ -613,7 +619,8 @@ body {
   color: var(--light-bg-color);
 }
 
-.project-item:hover .project-overlay {
+.project-item:hover .project-overlay,
+.project-item:focus .project-overlay {
   transform: translateY(0);
   opacity: 1;
 }
